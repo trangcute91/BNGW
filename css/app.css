@@ -1,0 +1,20 @@
+h2{
+    color: blue;
+    font-size: 25px;
+    font-family: "Times New Roman";
+    font-weight: 700;
+    text-decoration: underline;
+    background-color: brown;
+}
+
+h6{
+    background-image: url("../images/lab2.1.JPG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: right;
+}
+h4{
+    text-transform: capitalize;
+    color: darkmagenta;
+    font-style: italic;
+}
