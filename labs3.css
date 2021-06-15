@@ -1,0 +1,54 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.top{
+    float: left;
+    width: 1200px;
+    background-color: #aabbcc;
+    padding: 50px 0;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+h2{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin:  0;
+}
+.td{
+    text-align: center;
+}
+.bottom{
+    float: left;
+    width: 1200px;
+}
+.left{
+    float: left;
+    width: 250px;
+    padding: 50px;
+    margin-top: -180px;
+    background-color: #848e99;
+    margin-left: 30px;
+}
+.kc{
+    line-height: 30px;
+    text-align: left;
+}
+img{
+    width: 250px;
+}
+.icon{
+    width: 20px;
+    float: left;
+    margin-right: 10px;
+}
+.right{
+    margin-left: 400px;
+}
