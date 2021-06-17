@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100%;
+    background-color: #848e99;
+}
+.section{
+    float: left;
+    width: 100%;
+    height: 500px;
+    background-image: url("https://upanh123.com/wp-content/uploads/2019/07/anh-bi-anime-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    margin-left: 20px;
+    margin-right: auto;
+    float: none;
+    margin-top: -140px;
+}
+.logo{
+    float: left;
+    width: 20%;
+}
+.logo a{
+    font-size: 30px;
+    margin-left: 60px;
+    text-decoration: none;
+    color: #fcfcfc;
+}
+.toplinks{
+    float: left;
+    width: 40%;
+}
+.toplinks ul{
+    float: right;
+    margin-left: 100px;
+}
+.toplinks li{
+    text-align: center;
+    float: left;
+    margin-left: 20px;
+    list-style: none;
+}
+.toplinks li a{
+    color: #fcfcfc;
+    text-decoration: none;
+    font-weight: 500px;
+}
+.link{
+    float: right;
+    margin-right: 30px;
+}
+.txt{
+    float: left;
+    margin-left: 20px;
+}
+.lax{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 100px;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    letter-spacing:6px;
+}
+.lax p{
+    color: white;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+.box{
+    width: 100px;
+    height: 30px;
+    color: white;
+    border: 2px solid #fcfcfc;
+    position: relative;
+    left: 730px;
+    bottom: -25px;
+}
+.hi a{
+    color: #fcfcfc;
+    text-decoration: none;
+    position: relative;
+    top: 5px;
+}
+.bottom{
+    width: 100%;
+    height: 2500px;
+    background-color: #fcfcfc;
+}
+.box1{
+    float: left;
+    width: 400px;
+    height: 510px;
+    background-color: #848e99;
+    margin: 20px;
+    position: relative;
+    right: -130px;
+}
+.s{
+    color: blue;
+    font-size: 12px;
+    margin-top: 5px;
+}
+h3{
+    margin-top: 5px;
+    font-size: 17px;
+}
+.bottom.box1 p{
+    margin-top: 5px;
+}
+.s2{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.s1{
+    position: relative;
+    top: 40px;
+}
+.s1 a{
+    color: white;
+    text-decoration: none;
+}
+.or{
+    width: 100px;
+    height: 20px;
+    font-size: 13px;
+    background-color: #aabbcc;
+    margin-left: 600px;
+    text-align: center;
+}
+.order a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.menu0{
+    float: left;
+    width: 100%;
+    height: 150px;
+    margin-left: 570px;
+    margin-bottom: -20px;
+}
+.menu0 img{
+    width: 20px;
+    height: 20px;
+}
+.menu0 li{
+    list-style: none;
+}
+.menu0 a{
+    text-decoration: none;
+    float: left;
+    padding: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.menu2{
+    float: left;
+    width: 100%;
+    height: 150px;
+    margin-left: 600px;
+    border-top-color: #222222;
+    margin-top: 20px;
+}
+.menu2 li{
+    list-style: none;
+}
+.menu2 a{
+    float: left;
+    padding: 10px;
+    color: #222222;
+    text-decoration: none;
+}
