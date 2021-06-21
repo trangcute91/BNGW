@@ -1,0 +1,40 @@
+html{
+    background-color: #aabbcc;
+}
+.top{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: whitesmoke;
+}
+.bottom{
+    text-align: center;
+    background-color: #aabbcc;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+.bottom2{
+    height: 600px;
+    background-color: white;
+    border: 10px solid #aabbcc;
+    line-height: 19px;
+}
+
+.bottom3 {
+    width: 265px;
+    height: 25px;
+    background-color: #222222;
+    color: white;
+    position: relative;
+    right: 15px;
+    top: 31px;
+}
+.avata{
+    position: relative;
+    right: 15px;
+}
+.bottom3 a{
+    color: white;
+}

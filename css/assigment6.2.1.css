@@ -1,0 +1,94 @@
+html{
+    margin-top: 5px;
+}
+body{
+    width: 100%;
+    height: 1500px;
+    margin: 0;
+    background-color: #220a34;
+}
+.header{
+    font-family: 'Roboto', sans-serif;
+}
+.icons ul{
+    float: left;
+}
+.icons li{
+    float: right;
+    list-style: none;
+    margin-left: 3px;
+}
+.mu a{
+    text-align: center;
+    font-size: 18px;
+    color: 25;
+    position: relative;
+    top: 3px;
+    left: 140px;
+}
+.so{
+    background-color: #444444;
+}
+.dau{
+    background-color: #444444;
+}
+.menu{
+    background-color: #1d1d34;
+}
+.toplink3{
+    font-size: 25px;
+    height: 70px;
+    position: relative;
+    left: 150px;
+    top: 18px;
+}
+.toplink3 a{
+    color: white;
+}
+.toplink4{
+    text-align: center;
+    color: blue;
+    border: 1px solid #222222;
+    font-size: 16px;
+    position: relative;
+    top: 27px;
+}
+.re h3{
+    color: blue;
+    font-size: 22px;
+}
+.bottom5{
+    margin-left: 375px;
+    margin-bottom: 30px;
+}
+.bottom5 h2{
+    color: #848e99;
+    text-align: center;
+}
+.bottom5 h4{
+    text-align: center;
+    color: white;
+    margin-left: 10px;
+}
+.bottom5 p{
+    text-align: center;
+    color: white;
+}
+.footer{
+    border-top: 2px solid white;
+    bottom: 0px;
+    margin: 0;
+}
+.final{
+    margin-top: 20px;
+}
+.hit{
+    font-size: 17px;
+}
+.final p{
+    color: white;
+    margin-top: 20px;
+}
+.hit1{
+    margin-left: 8px;
+}
