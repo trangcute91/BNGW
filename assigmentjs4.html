@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>assigmentjs4</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/assigmentjs4.css" type="text/css">
+</head>
+<body>
+<div class="nhietdo col-md-12"></div>
+    <div class="container">
+        <div class="icon col-md-1">
+            <img class="img-icon" src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png"/>
+        </div>
+        <div class="tep col-md-2">
+            <h1><span id="temp">32</span><sup>o</sup>C|<sup>o</sup>F</h1>
+        </div>
+        <div class="tep2 col-md-3">
+            <h4>Precipitation: <span id="pre">9</span>%</h4>
+            <h4>Humidity: <span id="hum">62</span>%</h4>
+            <h4>Wind: <span id="wind">13</span>km/h</h4>
+        </div>
+        <div  class="tep3 col-md-6">
+            <h2>Hoan Kiem,Ha Noi <span id="q">Hoan Kiem</span></h2>
+            <p>Tuesday<span id="timezone">19:00</span></p>
+            <p>Clear with periodic cloud<span id="desc"></span></p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $.ajax({
+        url:"https://api.openweathermap.org/data/2.5/weather?q=hanoi,vietnam&&units=metric&appid=09a71427c59d38d6a34f89b47d75975c",
+        method:"GET",
+        success:function (rs){
+            var img = rs.data.image;
+            $("#temp").text(rs.main.temp);
+            $("#pre").text(rs.main.temp);
+            $("#hum").text(rs.main.humidity);
+            $("#wind").text(rs.wind.speed);
+            $("#city").text(rs.name+","+rs.sys.country);
+            for(var i=0;i<rs.weather.length;i++){
+                $("#desc").text(rs.weather[i].main+","+rs.weather[i].description);
+            }
+        }
+    })
+    // vi du api post
+    // $.ajax({
+    //     url:"https://foodgroup.herokuapp.com/api/create-order",
+    //     method:"POST",// GET hay POST do API quyet dinh
+    //     data:{
+    //        items:[]
+    //     },//noi truyen tham so
+    //     success:function (rs){
+    //        console.log(rs);
+    //     }
+    // })
+</body>
+</html>
