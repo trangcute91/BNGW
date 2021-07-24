@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baithi</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/baithi.css" type="text/css">
+</head>
+<body>
+    <h1 id="title">WELCOMETO SURVAY</h1>
+    <button type="button" onclick="hidePg()">Hide</button>
+    <button type="button" onclick="showPg()">Show</button>
+    <button type="button" onclick="onOff()">ON/OFF</button>
+    <div class="personal">
+        <div class="container">
+            <h1>MATRIMOMNIAL SERVEY</h1>
+            <div class="detal">
+                <h2>Personal Detail</h2>
+                <form action="action_page.php"></form>
+                    <div class="detail1 col-md-12">
+                        <div class="detail2 col-md-6">
+                            <h4>NAME:</h4>
+                        </div>
+                        <div class="detail2 col-md-6">
+                            <input type="text" name="fullname" required>
+                        </div>
+                    </div>
+                    <div class="detail1 col-md-12">
+                        <div class="detail2 col-md-6">
+                            <h4>ADDRESS:</h4>
+                        </div>
+                        <div class="detail2 col-md-6">
+                            <input type="text" name="address" required>
+                        </div>
+                    </div>
+                    <div class="detail1 col-md-12">
+                        <div class="detail2 col-md-6">
+                            <h4>PHONE:</h4>
+                        </div>
+                        <div class="detail2 col-md-6">
+                            <input type="tel" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="detail1 col-md-12">
+                        <div class="detail2 col-md-6">
+                            <h4>E-Mail:</h4>
+                        </div>
+                        <div class="detail2 col-md-6">
+                            <input type="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="detail1 col-md-12">
+                        <div class="detail2 col-md-6">
+                             <h4>Gender:</h4>
+                        </div>
+                        <div class="detail2 col-md-6">
+                                <input type="radio" name="gender" checked required> Male
+                                <input type="radio" name="gender" required> FeMale
+                        </div>
+                    </div>
+                    <div class="detail1 col-md-12">
+                        <div class="detail2 col-md-6">
+                            <h4>AGE:</h4>
+                        </div>
+                        <div class="detail2 col-md-6">
+                            <input type="number" name="quatity" min="16" max="105" required>
+                        </div>
+                    </div>
+                    <div class="detail1 col-md-12">
+                        <div class="detail2 col-md-6">
+                            <h4>Quatification:</h4>
+                        </div>
+                        <div class="detail2 col-md-6">
+                            <input type="checkbox" name="luachon" required> BCA
+                            <input type="checkbox" name="luachon" required> BA
+                            <input type="checkbox" name="luachon" required> BSC
+                        </div>
+                    </div>
+                    <div class="none col-md-12">
+
+                    </div>
+                    <div class="final col-md-12">
+                        <button type="button" name="Countinue" onclick="alert('Vui lòng tiếp tục làm  survey')">Countinue</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="container">
+            <h1>MATRIMOMNIAL SERVEY</h1>
+            <div class="question">
+                <h2>Survey question</h2>
+                <form action="action_page.php"></form>
+                <div class="question1 col-md-12">
+                    <div class="question2 col-md-6">
+                        <h4>How Offen you are surfing:</h4>
+                    </div>
+                    <div class="question2 col-md-6">
+                        Daily <input type="checkbox" required>
+                        Weekly <input type="checkbox" required>
+                        Monthly <input type="checkbox" required>
+                    </div>
+                </div>
+                <div class="question2 col-md-12">
+                    <div class="detail2 col-md-6">
+                        <h4>Which kind of visit:</h4>
+                    </div>
+                    <div class="question2 col-md-6">
+                        <input type="text" name="choise" required>
+                    </div>
+                </div>
+                <div class="question2 col-md-12">
+                    <div class="question2 col-md-6">
+                        <h4>Where are you:</h4>
+                    </div>
+                    <div class="question2 col-md-6">
+                        Home <input type="checkbox" required>
+                        Offices <input type="checkbox" required>
+                        Coffee shop <input type="checkbox" required>
+                    </div>
+                </div>
+                <div class="question2 col-md-12">
+                    <div class="question2 col-md-6">
+                        <h4>Rate for this website:</h4>
+                    </div>
+                    <div class="question2 col-md-6">
+                        Below 5 <input type="checkbox" required>
+                        5 to 10 <input type="checkbox" required>
+                        More than 10 <input type="checkbox" required>
+                    </div>
+                </div>
+                <div class="none col-md-12">
+
+                </div>
+                <div class="final col-md-12">
+                    <button type="submit"  onclick="alert('Thank You')">Submmit</button>
+                    <button type="reset">Reset</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>
