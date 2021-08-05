@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>assigmentjs5</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/assigmentjs4.css" type="text/css">
+</head>
+<body>
+
+  <div class="nhietdo col-md-12"></div>
+    <div class="container">
+      <div class="icon col-md-1">
+        <img class="img-icon" src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png"/>
+      </div>
+      <div class="tep col-md-2">
+        <h1><span id="temp">32</span><sup>o</sup>C|<sup>o</sup>F</h1>
+      </div>
+      <div class="tep2 col-md-3">
+        <h4>Precipitation: <span id="pre">9</span>%</h4>
+        <h4>Humidity: <span id="hum">62</span>%</h4>
+        <h4>Wind: <span id="wind">13</span>km/h</h4>
+      </div>
+      <div  class="tep3 col-md-6">
+        <h2>Hoan Kiem,Ha Noi <span id="q">Hoan Kiem</span></h2>
+        <p>Tuesday<span id="timezone">19:00</span></p>
+        <p>Clear with periodic cloud<span id="desc"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <ul  id="list-weather" class="row"></ul>
+
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+  $.ajax({
+    url:"https://api.openweathermap.org/data/2.5/forecast?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",
+    method:"GET",
+    success:function (rs) {
+      var list =rs.list;
+      for (var i=0; i<list.length; i++){
+        var img_url = "https://openweathermap.org/img/wn/03d@2x.png";
+        var weather = list[i].weather;
+        for (var j=0;j<weather.length; j++){
+          img_url= "https://openweathermap.org/img/wn/"+weather[j].icon+"@2x.png";
+          des = weather[j].description;
+        }
+        var li_html = "<li class=\"list1 col-md-2\">\n" +
+                "      <p class=\"time\">"+list[i].dt_txt+"</p>\n" +
+                "      <img src=\""+img_url+"\"/>\n" +
+                "      <p class=\"min_tmp\"><span>"+list[i].main.temp_min+"</span><sup>o</sup>C</p>\n" +
+                "      <p class=\"max_tmp\"><span>"+list[i].main.temp_max+"</span><sup>o</sup>C</p>\n" +
+                "      <p class=\"text-capitalize\">"+des+"</p>\n" +
+                "    </li>";
+        $("#list-weather").append(li_html);
+      }
+    }
+  });
+</script>
+</body>
+</html>
